@@ -30,11 +30,22 @@ body {
 
 h1 {
 	font-family: 'Francois One', sans-serif;
-	font-size: 50px;
+	font-size: 40px;
 	padding: 0 8px 16px 8px;
+	span {
+		color: #888;
+	}
 	&.small {
 		@include transition(all, 1s);
 		font-size: 20px;
+	}
+}
+
+.credits  {
+	padding: 8px;
+	opacity: 0.6;
+	a {
+		color: inherit;
 	}
 }
 

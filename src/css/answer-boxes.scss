@@ -1,0 +1,97 @@
+
+.answers-grid {
+	padding: 5px;
+}
+
+.answer-box {
+	@include fadein;
+	width: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	.answer-box-inner {
+		@include transition(all, 0.2s);
+		background: #eee;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		margin: 5px;
+		padding: 5px;
+		position: relative;
+		z-index: 100;
+		> .image {
+			border-radius: 3px;
+			width: 100%; 
+			background-size: 100%; 
+			background-repeat: no-repeat;
+			background-position-y: 50%;
+			@include transition(height, 1s);
+			background: 'img/src/img/questionmark.gif';
+		}
+		> p {
+			text-align: center;
+			padding-top: 5px;
+		}
+		>p.solution {
+			position: absolute;
+			top: 20%;
+			text-align: center;
+			width: 100%;
+			font-size: 2em;
+			display: none;
+		}
+		
+	}
+	
+	
+	.answer-box-links {
+		width: 95%;
+		margin: 0 auto;
+		background: #ddd;
+//		color: #fff;
+		padding: 5px;
+		box-sizing: border-box;
+		padding-top: 20px;
+		border-radius: 5px;
+		margin-bottom: -90px;
+		top: -100px;
+
+		-webkit-transition: all 1s;
+		position: relative;
+		z-index: 50;
+		opacity: 0;
+		
+		&.active {
+			margin-bottom: -20px;
+			top: -20px;
+			opacity: 1;
+		}
+	}
+	
+	&.answered {
+		p.solution {
+			display: block;
+		}
+		
+		.image {
+			opacity: 0.5;
+			height: 0 !important;
+		}
+		
+	}
+	
+	&.answered.incorrect {
+		.answer-box-inner {
+			background: #BE8E8E;
+		}
+	}
+
+
+	&.answered.correct {
+		.answer-box-inner {
+			background: #94D794;
+		}
+	}
+	
+	
+}

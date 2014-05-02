@@ -1,0 +1,23 @@
+.question-wrapup {
+	position: absolute;
+	top: 8em;
+	background: white;
+	border: 0 solid #ccc;
+	border-width: 10px 0;
+	padding: 20px;
+	width: auto;
+	display: none;
+	p{
+		font-size: 1.2em;
+	}
+}
+
+.play-again {
+	@include fadein;
+	@include noheight;
+	text-align: center;
+	padding: 20px 0;
+	background: rgb(253, 236, 184);
+	font-size: 2em;
+	margin: 1em 0;
+}

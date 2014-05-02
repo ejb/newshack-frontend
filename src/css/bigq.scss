@@ -1,0 +1,8 @@
+.big-question {
+	padding: 0 10px;
+	font-size: 35px;
+	.big-question-topic {
+		font-weight: bold;
+	}
+	@include fadein;
+}

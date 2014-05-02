@@ -15,7 +15,7 @@ $( document ).ready(function() {
 		setTimeout(function(){
 			$('h1').addClass('small');
 			buildQuestion( d );
-		},1000);
+		},2000);
 		
 	});
 	
