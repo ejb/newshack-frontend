@@ -20,12 +20,6 @@ function buildQuestion( data ){
 		}
 		data.answers[i] = a;
 		
-		a.img  = a.img.replace(/\\/g,'');
-	    var img = new Image();
-	    img.src = a.img;
-	    if (img.height === 0) {
-	    	a.img = 'img/src/img/questionmark.png';
-	    }
 		
 	}
 	
@@ -94,5 +88,20 @@ function buildQuestion( data ){
 			$this.addClass('active');
 		},(500*i)+1000);
 	});	
+	
+	
+	setTimeout(function(){
+		$('.image').each(function(){
+			var src = $(this).css('background-image').replace('url(','');
+			src = src.substring(0, src.length - 1);
+			console.log(src);
+		    var img = new Image();
+			img.src = src;
+			    if (img.height === 0) {
+			    	$(this).css('background-image','url(img/src/img/questionmark.png)');
+			    }
+	
+		 });
+	 },1000);
 	
 }
