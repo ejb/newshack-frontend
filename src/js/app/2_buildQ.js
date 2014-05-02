@@ -49,12 +49,11 @@ function buildQuestion( data ){
 			$("html, body").animate({ scrollTop: scrollTo });
 		
 			if( $(this).hasClass('correct') ) {
-				setTimeout(function(){
-					$('.play-again').removeClass('inactive').addClass('active');
-					setTimeout(function(){
-						$("html, body").animate({ scrollTop: $('.play-again').position().top });
-					},200);
-				},500);
+				$(this).append('<div class="play-again active">Next question</div>');
+				$('.play-again').click(function(){
+					playAgain();
+				});
+				
 				if (!answered) {
 					score++;
 				}
@@ -67,9 +66,6 @@ function buildQuestion( data ){
 		
 	});
 	
-	$('.play-again').click(function(){
-		playAgain();
-	});
 	
 
 
