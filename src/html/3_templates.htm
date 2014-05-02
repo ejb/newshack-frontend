@@ -14,9 +14,9 @@
             
         </div>
         <div class="answer-box-links" style="">
-            {{message}} Appears in {{occurrence}} articles:
+            <b>{{message}}</b> Appears in {{occurrence}} articles.
             <ul>
-            {{#each ../question.solution.articles}}
+            {{#each articles}}
             <li>- <a href="{{url}}">{{headline}}</a></p>
             {{/each}}
             </ul>
@@ -26,14 +26,6 @@
     -->{{/each}}
 </div>
 
-<div class="question-wrapup">
-    <p>{{question.label}} and {{question.solution.label}} appear in these {{question.solution.articles.length}} articles:<p>
-    <ul>
-        {{#each question.solution.articles}}
-        <li>- <a href="{{url}}"  target="_blank" >{{headline}}</a></p>
-        {{/each}}
-    </ul>
-</div>
 
 <div class="play-again inactive">
     Next question

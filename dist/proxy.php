@@ -1,7 +1,8 @@
 <?php
 header('Content-Type: application/json');
 
-    $url = 'http://ec2-54-72-215-27.eu-west-1.compute.amazonaws.com/api/public/random/';
+
+    $url = 'http://ec2-54-72-215-27.eu-west-1.compute.amazonaws.com/api/public/random/index/round/' . $_GET["x"];
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
