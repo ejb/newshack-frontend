@@ -1,0 +1,45 @@
+{
+	"question": {
+        "label": "Nigel Farage",
+        "thing": "http://dbpedia.org/resource/Nigel_Farage"
+	},
+	"answers": [
+	    {
+	        "img": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vladimir_Putin_12015.jpg/200px-Vladimir_Putin_12015.jpg",
+	        "label": "Vladimir Putin",
+	        "occurrence": 92,
+	        "thing": "http://dbpedia.org/resource/Vladimir_Putin"
+	    },
+	    {
+	        "img": "http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Boris_Johnson_-opening_bell_at_NASDAQ-14Sept2009-3c_cropped.jpg/200px-Boris_Johnson_-opening_bell_at_NASDAQ-14Sept2009-3c_cropped.jpg",
+	        "label": "Boris Johnson",
+	        "occurrence": 37,
+	        "thing": "http://dbpedia.org/resource/Boris_Johnson"
+	    },
+	    {
+	        "img": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/TE-Collage_Brussels.png/200px-TE-Collage_Brussels.png",
+	        "label": "Brussels",
+	        "occurrence": 164,
+	        "thing": "http://dbpedia.org/resource/Brussels"
+	    },
+	    {
+	        "img": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/200px-Flag_of_Romania.svg.png",
+	        "label": "Romania",
+	        "occurrence": 20,
+	        "thing": "http://dbpedia.org/resource/Romania",
+			"correct": true,
+			"articles": [
+				{
+					"headline": "Headline Goes Here",
+					"url": "http://wsj.com/blah.html",
+					"publication": "WSJ"
+				},
+				{
+					"headline": "Headline Goes Here",
+					"url": "http://thetimes.co.uk/blah.html",
+					"publication": "The Times"
+				}
+			]
+	    }
+	]
+}
