@@ -20,4 +20,21 @@
 	background: rgb(253, 236, 184);
 	font-size: 2em;
 	margin: 1em 0;
+	cursor: pointer;
+	
+}
+
+
+.final-score {
+	font-size: 20px;
+	padding: 8px;
+	p {
+		text-align: center;
+		margin-top: 1em;
+		font-size: 80%;
+	}
+	.twitter-share-button {
+		margin: 5px auto;
+		display: block;
+	}
 }

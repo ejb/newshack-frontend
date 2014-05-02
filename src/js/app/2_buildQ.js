@@ -20,6 +20,7 @@ function buildQuestion( data ){
 		}
 		data.answers[i] = a;
 		
+		a.img  = a.img.replace(/\\/g,'');
 	    var img = new Image();
 	    img.src = a.img;
 	    if (img.height === 0) {
