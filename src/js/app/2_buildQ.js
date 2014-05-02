@@ -52,7 +52,7 @@ function buildQuestion( data ){
 				setTimeout(function(){
 					$('.play-again').removeClass('inactive').addClass('active');
 					setTimeout(function(){
-						$("html, body").animate({ scrollTop: 0 });
+						$("html, body").animate({ scrollTop: $('.play-again').position().top });
 					},200);
 				},500);
 				if (!answered) {
