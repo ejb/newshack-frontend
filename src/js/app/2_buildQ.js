@@ -90,18 +90,18 @@ function buildQuestion( data ){
 	});	
 	
 	
-	setTimeout(function(){
-		$('.image').each(function(){
-			var src = $(this).css('background-image').replace('url(','');
-			src = src.substring(0, src.length - 1);
-			console.log(src);
-		    var img = new Image();
-			img.src = src;
-			    if (img.height === 0) {
-			    	$(this).css('background-image','url(img/src/img/questionmark.png)');
-			    }
-	
-		 });
-	 },1000);
+	// setTimeout(function(){
+	// 	$('.image').each(function(){
+	// 		var src = $(this).css('background-image').replace('url(','');
+	// 		src = src.substring(0, src.length - 1);
+	// 		console.log(src);
+	// 	    var img = new Image();
+	// 		img.src = src;
+	// 		    if (img.height === 0) {
+	// 		    	$(this).css('background-image','url(img/src/img/questionmark.png)');
+	// 		    }
+	// 
+	// 	 });
+	//  },1000);
 	
 }
