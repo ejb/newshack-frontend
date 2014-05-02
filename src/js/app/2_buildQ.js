@@ -9,7 +9,7 @@ function buildQuestion( data ){
 	for (var i = 0; i < data.answers.length; i++) {
 		var a = data.answers[i];
 		if (a.correct) {
-			a.message = "Correct! Appears in these articles:";
+			a.message = "Correct! Appears in articles like this:";
 			a.class = "correct";
 			data.question.solution = [];
 			data.question.solution.label = a.label;
