@@ -13,9 +13,9 @@ function buildQuestion( data ){
 			a.class = "correct";
 			data.question.solution = [];
 			data.question.solution.label = a.label;
-			data.question.solution.articles = a.articles;
+			a.articles = a.articles.slice(0, 2);
 		} else {
-			a.message = "Not the most tenuous connection. Try again.";
+			a.message = "Not the most tenuous connection: this appears in quite a few articles with "+data.question.label+". Try again.";
 			a.class = "incorrect";
 		}
 		data.answers[i] = a;
